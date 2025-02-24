@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="./style.css">
+          <link rel="stylesheet" href="./castles/castles_style.css">
+          <title>Kerri Gillion Focus Web Dev Capstone</title>
+     </head>
+     <body>
+        <header>
+            <banner class="hero">
+                <h1>Focus<br>Web Development<br>Capstone</h1>
+                <nav>
+                    <button class="nav_button" id="homeBtn" >Home</button>
+                    <button class="nav_button" id="aboutBtn" >About</button>
+                </nav>
+            </banner>
+        </header>
+        <div class="title">
+            <h2>Castle Carousel</h2>
+        </div>
+        <main>
+            <aside class="side-bar">
+                <nav>
+                    <button class="nav_button" id="memoryBtn">The Memory Game</button>
+                        <div class="how-to-play" id="how-to_memory">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    <button class="nav_button" id="moleBtn">Whack-A-Mole</button>
+                        <div class="how-to-play" id="how-to_whack-mole">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    <button class="nav_button" id="castleBtn">Castle Carousel</button>
+                        <div class="how-to-play" id="how-to_castles">
+                            <h3>My Favourite Castles</h3>
+                            <p>Explore a few of my favourite castles by clicking on the thumbnail. You will find a few interesting facts about the history of the castle as well as a photo gallery for each.</p>
+                        </div>
+                </nav>
+            </aside>
+            <section class="container">
+                <div id="thumbnails">
+                    <img src="./images/neuschwanstein-front-view.jpg" alt="" class="thumbnail" data-content="content1">
+                    <img src="./images/hohenzollern-sunrise.jpg" alt="" class="thumbnail" data-content="content2">
+                    <img src="./images/mont-saint-michel-from-mainland.jpg" alt="" class="thumbnail" data-content="content3">
+                </div>
+                <div id="content1" class="content">
+                    <h2>Schloss Neuschwanstein</h2>
+                    <ul class="castle_details">
+                        <li>Location: Bavaria, Germany</li>
+                        <li>Commissioned by: "Mad" King Ludwig II, The Fairy-Tale King, who reigned for 22 years and died at the young age of 40.</li>
+                        <li>Architecture: Featuring Romanesque, Gothic, and Byzantine architecture, the design was inspired by the sets of the musicals written by Richard Wagner. The palace later inspired the Disney design of Sleeping Beauty's castle.</li>
+                        <li>Construction: 1869-1892</li>
+                        <li>Tourism: One of the most visited castles, Neuschwanstein boasts 1.5 million visitors a year, and up to 6000 visitors a day during the peak season.</li>
+                        <li>History: The name of this castle translates to New Swan Stone, and is fitting given the King's obsession with Richard Wagner's fantasy tales. However, King Ludwig II would never see the palace completed as he died shrouded in mystery only 172 days after moving in. Originally planned to have 200 rooms, the design was drastically reduced due to financial constraints. Shortly after his death in 1884, his son opened the palace to paying visitors to help recoup the cost of construction. With only 14 rooms finished, furnished, and accessible on guided tours, this attraction remains a steady and reliable source of income for the state. </li>
+                    </ul>
+                    <div class="carousel" id="carousel1" >
+                        <div class="carousel-images">
+                            <div class="carousel-item active">
+                                <img src="./images/neuschwanstein-front-view.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/neuschwanstein-front-autumn.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/neuschwanstein-back-view.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/neuschwanstein-with-village.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/neuschwanstein-inner-courtyard.jpg" alt="">
+                            </div>
+                        </div>
+                        <button class="prev" onclick="prevImage('carousel1')">&#10094;</button>
+                        <button class="next" onclick="nextImage('carousel1')">&#10095;</button>
+                    </div>
+                </div>
+                <div id="content2" class="content">
+                    <h2>Burg Hohenzollern</h2>
+                    <ul class="castle_details">
+                        <li>Location: Mount Hohenzollern, Baden-Wurttemberg, Germany.</li>
+                        <li>Commissioned by: Fredrick William IV, Crown Prince of Prussia.</li>
+                        <li>Architecture: English Gothic Revival</li>
+                        <li>Construction: 1846-1867</li>
+                        <li>Tourism: A popular choice, Burg Hohenzollern receives 400,000 visitors each year.</li>
+                        <li>History: This is the third castle built on this site, dating back to the middle ages 1000 years ago, all belonging to the family Hohenzollern. Used primarily as a show piece, non of the Hohenzollern Kaiser of the German Empire lived in the castle full time. After WWI the Hohenzollern made the castle this their family seat until 1952.</li>
+                    </ul>
+                    <div class="carousel" id="carousel2" >
+                        <div class="carousel-images">
+                            <div class="carousel-item active">
+                                <img src="./images/hohenzollern-sunrise.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/hohenzollern-gate.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/hohenzollern-chapel.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/hohenzollern-courtyard.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/hohenzollern-castle-wall.jpg" alt="">
+                            </div>
+                        </div>
+                        <button class="prev" onclick="prevImage('carousel2')">&#10094;</button>
+                        <button class="next" onclick="nextImage('carousel2')">&#10095;</button>
+                    </div>
+                </div>
+                <div id="content3" class="content">
+                    <h2>Mont Saint-Michel</h2>
+                        <ul class="castle_details">
+                            <li>Location: Normandy, France.</li>
+                            <li>Commissioned by: Bishop Aubert of Avarches after receiving visions of the Archangel Michael</li>
+                            <li>Architecture: Romanesque</li>
+                            <li>Construction: Began in 708 AD and continued for 1300 years.</li>
+                            <li>Tourism: Mont Saint-Michel boast a staggering 3 million visitors a year.</li>
+                            <li>History: Once the Second biggest Christian pilgrimage, testing penitence, sacrifice, and commitment. Many underground crypts and chapels were built to compensate for and support the foundation for the massive structure. Known as the Peril of the Sea, medieval pilgrims made their way across the flats where tides can vary by as much as 46 feet and move at the speed of a galloping horse. The island is now connected to the mainland by a modern causeway. Mont Saint Michel has a slightly smaller counterpart in Cornwall England, St Michael's Mont, as a reward to Mont St Michel for supporting William the Conqueror's claim the English throne. During the Hundred Years' War, the English made repeated assaults but were unable to take the island. This led to an increase in morale, and inspiring Joan of Arc, turned the tides of war against the English. Closed in 1791 and converted to a prison during the French Revolution, in 1863 the prisoners were transferred and the monastery was restored. </li>
+                            <li>Mont Saint Michel serves as an illustration of the structural hierarchy of feudal society. On the highest point is the abbey and monastery, below this are the Great Halls, then the stores and housing, at the bottom outside the walls are the fishermen and farmers housing.</li>
+                        </ul>
+                    <div class="carousel" id="carousel3" >
+                        <div class="carousel-images">
+                            <div class="carousel-item active">
+                                <img src="./images/mont-saint-michel-from-mainland.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/mont-saint-michel-night.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/mont-saint-michel-high-tide.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/mont-saint-michel-low-tide.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/mont-saint-michel-roof-tops.jpg" alt="">
+                            </div>
+                        </div>
+                        <button class="prev" onclick="prevImage('carousel3')">&#10094;</button>
+                        <button class="next" onclick="nextImage('carousel3')">&#10095;</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="disclaimer">
+            <p class="by-line">These programs were created by Kerri Gillion for Focus Web Development January 2025</p>
+            <p class="inspiration" id="">I have always been fascinated by history and that includes a near-obsession with castles. I thought making the image carousel for a couple of my favourites. It was hard to only pick three. I found the castle photos on the public domain image site <a href="https://www.pikist.com/">Pikist</a>. I enjoyed working out this code without tutorials.</p>
+        </footer>
+        <script src="./script.js"></script>
+        <script src="./castles/castles_script.js"></script>  
+     </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="./style.css">
+          <link rel="stylesheet" href="./memory/memory_style.css">
+          <title>Kerri Gillion Focus Web Dev Capstone</title>
+     </head>
+     <body>
+        <header>
+            <banner class="hero">
+                <h1>Focus<br>Web Development<br>Capstone</h1>
+                <nav>
+                    <button class="nav_button" id="homeBtn" >Home</button>
+                    <button class="nav_button" id="aboutBtn" >About</button>
+                </nav>
+            </banner>
+        </header>
+        <div class="title">
+            <h2>The Memory Game</h2>
+        </div>
+        <main>
+            <aside class="side-bar">
+                <nav>
+                    <button class="nav_button" id="memoryBtn">The Memory Game</button>
+                        <div class="how-to-play" id="how-to_memory">
+                            <h3>How To Play</h3>
+                            <p>Select a card to reveal the picture. Select a second card. If both cards match, you score a point. If the cards do not match, they both turn back over. Keep playing until you have found all the matching pairs.</p>
+                        </div>
+                    <button class="nav_button" id="moleBtn">Whack-A-Mole</button>
+                        <div class="how-to-play" id="how-to_whack-mole">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    <button class="nav_button" id="castleBtn">Castle Carousel</button>
+                        <div class="how-to-play" id="how-to_castles">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                </nav>
+            </aside>
+            <section class="memory_board">
+                <h4>SCORE: <span id="result"> </span></h4>
+                <div class="grid"></div>
+            </section>         
+        </main>
+        <footer class="disclaimer">
+            <p class="by-line">These programs were created by Kerri Gillion for Focus Web Development January 2025</p>
+            <p class="inspiration" id="">I chose to program basic browser games because it's something we didn't do in class and it looks fun. I found inspiration for this project in an article at <a href="https://www.freecodecamp.org/news/javascript-projects-for-beginners/">freeCodeCamp.org</a>. I enjoyed watching the tutorials and making the code my own.</p>
+        </footer> 
+        <script src="./script.js"></script>
+        <script src="./memory/memory_script.js"></script>  
+    </body>
+</html>

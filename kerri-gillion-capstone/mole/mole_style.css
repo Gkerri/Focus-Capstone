@@ -1,0 +1,36 @@
+.mole_field {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width:74%;
+    height:fit-content;
+}
+.grid {
+    background-image: url(../images/green-background.jpg);
+    background-size:over;
+    border: 2px solid green;
+    margin:4px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width:100%;
+    height:100%;
+    width:545px;
+    height:545px;
+    cursor: url('../images/mallet-1.png'), auto;
+}
+.square {
+    width:180px;
+    height:180px;
+    border: 2px solid green;
+    
+}
+.mole {
+    background-image:url(../images/pop-up-mole.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+

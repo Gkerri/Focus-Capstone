@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Kerri Gillion Focus Web Dev Capstone</title>
+    </head>
+    <body>
+        <header>
+            <banner class="hero">
+                <h1>Focus<br>Web Development<br>Capstone</h1>
+                <nav>
+                    <button class="nav_button" id="homeBtn" >Home</button>
+                    <button class="nav_button" id="aboutBtn" >About</button>
+                </nav>
+            </banner>
+        </header>
+        <div class="title">
+            <h2>About My Capstone</h2>
+        </div>
+        <main>
+            <aside class="side-bar">
+                <nav>
+                    <button class="nav_button" id="memoryBtn">The Memory Game</button>
+                        <div class="how-to-play" id="how-to_memory">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    <button class="nav_button" id="moleBtn">Whack-A-Mole</button>
+                        <div class="how-to-play" id="how-to_whack-mole">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    <button class="nav_button" id="castleBtn" >Castle Carousel</button>
+                        <div class="how-to-play" id="how-to_castles">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                </nav>
+            </aside>
+            <section class="about_capstone">
+                <div>
+                    <p>I have always enjoyed browser games and I thought it would be fun to try making one or two very simple games. I have chosen <span class="game-title">The Memory Game</span> and <span class="game-title">Whack-A-Mole</span> because they give me a chance to practice more of the JavaScript skills we have been learning.</p>
+                    <p>I'm a big fan of history, and admittedly, a little obsessed with castles, so to challenge myself I made <span class="game-title">Castle Carousel</span>, a page with fun facts and photo galleries.</p>
+                </div>
+                <div class="how-its-made">
+                    <h3>The Memory Game</h3>
+                    <p>To create this program, I made a basic html boilerplate with a simple (div) inside the body to hold the grid, and an (h) element to display the results. I built everything else inside JavaScript, and styled the page with CSS.<br>I created the function createBoard using a For Loop that includes .createElement, .appendChild, and triggers the function flipCard. After that I wrote the flipCard function using get.Attribute, set.Attribute, and .push methods. I included an If statement that triggers the function checkForMatch once two cards have been chosen.<br>The checkForMatch function was the most challenging part of this program because of all the variables. This function names the two chosen cards and compares them using an If statement. Depending if the cards match or not determines what happens to the images on the grid and triggers an alert from the browser. Outside of that is another If statement counting cards won against the original array. Once all the matches are found a "congratulations" result is displayed on the DOM. Finally, I used a Math.random object to randomize the placement of the images each time the game starts. I called the createBoard function and tested the game.<br>There is one bug that I cannot find a fix for yet. If you click the card you just turned over, it will count as a match and that card will disappear. Also, if you click the empty space where a card was, the program will respond as though the card was there.</p>
+                </div>
+                <div class="how-its-made">
+                    <h3>Whack-A-Mole</h3>
+                    <p>This game has a few more details than the first game. I started with the same basic boilerplate, this time I added elements for the game grid, each individual square, and displays for both the score counter and game timer. I styled the page with CSS and wrote the programming in Javascript.<br>This game has many variables and multiple functions. I started with the randomSquare function to move the mole and event listener to grab the mouse interactions for hitting the mole. This function also sends the score back to the DOM to display. Then I set the intervals for timing the moles movements and the countdown functions.<br>At this point the game was functioning but it would start as soon as the page loaded or was refreshed. I wanted to make a function that would allow the user to start the game. This was my biggest challenge. I created a playGame function and wrapped it around all of the existing code. I also added an endAllFunctions function that I put inside the countDown function. I made a button on the index to trigger the playGame function.<br>Now that the game starts on command, I found one last small bug that does not interfere with the game. When the clock runs out, the mole will stop moving. However, the user can continue to click on the mole and the score will increase each time.</p>
+                </div>
+                <div class="how-its-made">
+                    <h3>Castle Carousel</h3>
+                    <p>This program was a stretch for me because I didn't want to use a tutorial or a how-to-code article. I went out in the wild and used my Dev Tools to explore what other programmers had done, then I went in my VSCode Studio using what I learned in class to played around until it made sense.<br>I wanted thumbnails that would activate hidden content. In HTML I made a div to hold the thumbnails and a separate div to hold the hidden content for each image. In JavaScript I used forEach to hide content and getAttribute to show content.<br>Inside the hidden content I wanted to be share some fun facts about each castle and have an image carousel because seeing the castles is the best part. This was my biggest challenge in the whole course. In JavaScript I started by writing a function using an index with an if/else statement, and buttons to scroll through the photo gallery. I had a working carousel! I copy and pasted my divs in HTML to build the second and third carousels, but the whole program bugged out. The JavaScript was reading all of my hidden carousel divs as a single Index (thank you Elle for helping point that out). The solution that I found was to set the image index as an array and give each of my carousels an Id selector. I had to adjust the code inside the function a little but it maintains the same basic pieces as a single carousel.<br>Now that all of my JavaScript was working, I linked in all my images and found that I needed to play with the CSS. First, my images were not fitting inside the box. So I used object-fit to make sure the images would keep their original ratio and show true. Once that was done, I had to figure out how to make the containers resize to match the size of the image. I tried a little too hard to fix this and got frustrated, so I just went and found new images that were all the same size.</p>
+                </div>
+            </section>
+        </main>
+        <footer class="disclaimer">
+            <p class="by-line">These programs were created by Kerri Gillion for Focus Web Development January 2025</p>
+            I chose to program hidden content featuring image carousels as my personal challenge. I chose castles as my subject because I love castles and learning the history behind them. Most of the information I used for fun facts can be found in a quick google search or on wikipedia. All the images of I castles I downloaded from the public domain on <a href="https://www.pikist.com/">Pikist</a>, Royalty Free Photos For Designers.</p>
+        </footer>
+        <script src="./script.js"></script>  
+     </body>
+</html>
